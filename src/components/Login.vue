@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .total_div_login {
-    background: url("../assets/images/bei.png") no-repeat;
+    background: url("../src/assets/images/bei.png") no-repeat;
     background-size: 100%;
     position: relative;
 }
@@ -206,4 +206,5 @@ export default {
     text-align: center;
     padding-top: 10px;
     margin: 0 auto;
-}</style>
+}
+</style>

@@ -3,8 +3,12 @@
     <!-- 商品发布 -->
     <div class="system">
       <div class="tab">普朗克农场管理系统</div>
-      <i class="el-icon-minus"></i>
-      <i class="el-icon-arrow-right"></i>
+      <el-icon>
+        <Minus />
+      </el-icon>
+      <el-icon>
+        <ArrowRight />
+      </el-icon>
       <div class="tab">商品发布</div>
     </div>
     <!-- 查询部分 -->
@@ -39,7 +43,9 @@
                 <div class="tu">图片:&nbsp;&nbsp;</div>
                 <el-upload :action=getBaseUrl() list-type="picture-card" :on-preview="handlePictureCardPreview"
                   :on-remove="handleRemove">
-                  <i class="el-icon-plus"></i>
+                  <el-icon>
+                    <Plus />
+                  </el-icon>
                 </el-upload>
                 <el-dialog :visible.sync="dialogVisible">
                   <img width="100%" :src="dialogImageUrl">
@@ -115,7 +121,9 @@
                 <div class="tu">图片:&nbsp;&nbsp;</div>
                 <el-upload :action=getBaseUrl() list-type="picture-card" :on-preview="handlePictureCardPreview"
                   :on-remove="handleRemove">
-                  <i class="el-icon-plus"></i>
+                  <el-icon>
+                    <Plus />
+                  </el-icon>
                 </el-upload>
                 <el-dialog :visible.sync="dialogVisible">
                   <img width="100%" src="../assets/images/ping.png">

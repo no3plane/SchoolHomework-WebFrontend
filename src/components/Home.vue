@@ -3,43 +3,51 @@
     <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
       :collapse="isCollapse">
       <el-menu-item class="home_menu_item1" index="1">
-        <template>
-          <i class="el-icon-s-platform" style="color: #fff"></i>
-          <span slot="title">农场管理系统</span>
-        </template>
+        <el-icon>
+          <Platform />
+        </el-icon>
+        <span slot="title">农场管理系统</span>
       </el-menu-item>
       <el-menu-item class="home_menu_item1" index="2" @click="showHome">
-        <template>
-          <i class="el-icon-s-home" style="color: #fff"></i>
-          <span slot="title">首页</span>
-        </template>
+        <el-icon>
+          <HomeFilled />
+        </el-icon>
+        <span slot="title">首页</span>
       </el-menu-item>
       <el-menu-item class="home_menu_item1" index="3" @click="shouShop">
-        <template>
-          <i class="el-icon-menu" style="color: #fff"></i>
-          <span slot="title">商品发布</span>
-        </template>
+        <el-icon>
+          <Menu />
+        </el-icon>
+        <span slot="title">商品发布</span>
       </el-menu-item>
       <el-menu-item class="home_menu_item1" index="4">
-        <template>
-          <i class="el-icon-s-order" style="color: #fff"></i>
-          <span slot="title">订单列表</span>
-        </template>
+        <el-icon>
+          <List />
+        </el-icon>
+        <span slot="title">订单列表</span>
       </el-menu-item>
     </el-menu>
     <el-container>
       <el-header class="probably">
-        <el-radio-group v-model="isCollapse">
-          <i class="el-icon-s-fold" @click="yes(1)" v-if="draw1"></i>
-          <i class="el-icon-s-unfold" @click="yes(2)" v-if="draw"></i>
-        </el-radio-group>
+        <el-icon @click="yes(1)" v-if="draw1">
+          <Fold />
+        </el-icon>
+        <el-icon @click="yes(2)" v-if="draw">
+          <Expand />
+        </el-icon>
         <div>
           <div class="header_class">
-            <i class="el-icon-question"></i>
-            <i class="el-icon-message-solid"></i>
+            <el-icon>
+              <QuestionFilled />
+            </el-icon>
+            <el-icon>
+              <Message />
+            </el-icon>
             <img src="../assets/images/managerHeader.png" class="header_image_div" @click="userAvatar" />
             <el-button type="danger" size="mini" class="exitLogin" @click="signOutUser" v-if="signOut">退出登录</el-button>
-            <i class="el-icon-caret-bottom"></i>
+            <el-icon>
+              <CaretBottom />
+            </el-icon>
           </div>
         </div>
       </el-header>
@@ -87,7 +95,7 @@ export default {
     },
     //左侧菜单栏
     handleOpen(key, keyPath) {
-      alert(key, keyPath);
+      // alert(key, keyPath);
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath);
@@ -208,5 +216,4 @@ export default {
   width: 52px;
   height: 52px;
   cursor: pointer;
-}
-</style>
+}</style>

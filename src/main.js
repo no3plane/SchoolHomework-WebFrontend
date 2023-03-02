@@ -1,22 +1,21 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
+import router from "./plugins/router";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import * as echarts from "echarts";
 import "element-plus/dist/index.css";
 import ElementPlus from "element-plus";
 import CollapseTransition from "element-plus";
+import "element-plus/theme-chalk/base.css";
 import "./assets/css/global.css";
 
-import store from "./store";
+import store from "./plugins/store";
 import axios from "axios";
 
 import VXETable from "vxe-table";
 import "vxe-table/lib/style.css";
 import Print from "vue-print-nb";
-// fade/zoom 等
-import "./plugins/element.js";
 
 // 大屏自适应
 import "./util/rem";
@@ -33,6 +32,11 @@ app.use(Print);
 
 app.config.globalProperties.$echarts = echarts;
 app.config.globalProperties.$axios = axios;
+
+import * as ElementPlusIconsVue from "@element-plus/icons-vue";
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component);
+}
 
 // 百度地图
 // import BaiduMap from 'vue-baidu-map'

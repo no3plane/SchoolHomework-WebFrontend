@@ -1,21 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-//import Login from '../components/Login.vue'
-const Login = () =>
-  import(
-    /* webpackChunkName: "login_home_welecome-" */ "../components/Login.vue"
-  );
-const Home = () =>
-  import(
-    /* webpackChunkName: "login_home_welecome-" */ "../components/Home.vue"
-  );
-const shopRelease = () =>
-  import(
-    /* webpackChunkName: "login_home_welecome-" */ "../components/shopRelease.vue"
-  );
-const Shop = () =>
-  import(
-    /* webpackChunkName: "login_home_welecome-" */ "../components/Shop.vue"
-  );
+import Login from "../components/Login.vue";
+import Home from "../components/Home.vue";
+import Shop from "../components/Shop.vue";
+import shopRelease from "../components/shopRelease.vue";
 
 const routes = [
   {
@@ -26,7 +13,6 @@ const routes = [
     path: "/login",
     component: Login,
   },
-  //首頁
   {
     path: "/home",
     component: Home,
@@ -38,7 +24,6 @@ const routes = [
       },
     ],
   },
-  //商品
   {
     path: "/home",
     component: Home,
