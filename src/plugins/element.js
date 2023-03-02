@@ -1,0 +1,107 @@
+import Vue from 'vue'
+import { Button, CollapseItem } from 'element-ui'
+import {
+    Form,
+    FormItem,
+    Input,
+    Message,
+    Container,
+    Header,
+    Aside,
+    Main,
+    Menu,
+    Submenu,
+    MenuItemGroup,
+    MenuItem,
+    Breadcrumb,
+    BreadcrumbItem,
+    Card,
+    Row,
+    Col,
+    Table,
+    TableColumn,
+    Tooltip,
+    Pagination,
+    Dialog,
+    Select,
+    Option,
+    MessageBox,
+    Tag,
+    Tree,
+    Tabs,
+    TabPane,
+    Divider,
+    DatePicker,
+    RadioGroup,
+    Radio,
+    CheckboxGroup,
+    Checkbox,
+    Cascader,
+    Image,
+    Upload,
+    Dropdown,
+    DropdownItem,
+    Popover,
+    DropdownMenu,
+    InputNumber,
+    Link,
+    Steps,
+    Step,
+    Switch,
+    Collapse,
+    Transfer
+
+} from 'element-ui'
+Vue.use(Transfer)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(Popover)
+Vue.use(Switch)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Link)
+Vue.use(InputNumber)
+Vue.use(Dropdown)
+Vue.use(DropdownItem)
+Vue.use(DropdownMenu)
+Vue.use(Upload)
+Vue.use(Image)
+Vue.use(Cascader)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(DatePicker)
+Vue.use(Divider)
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItemGroup)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Card)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Tooltip)
+Vue.use(Pagination)
+Vue.use(Dialog)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Tabs)
+Vue.use(TabPane)
+    //全局挂载message
+Vue.prototype.$msg = Message
+    //全局挂载messageBox
+Vue.prototype.$confirm = MessageBox.confirm

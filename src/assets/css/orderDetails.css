@@ -1,0 +1,156 @@
+.container{
+  height: 100%;
+  background-color: #eaeef7;
+}
+/* 商品发布 */
+.system{
+  display: flex;
+  color: #474d76;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.el-icon-minus{
+  color: #474d76;
+  margin-top: 0.2%;
+}
+.el-icon-arrow-right{
+  color: #474d76;
+  margin-top: 0.2%;
+}
+/* 查询部分 */
+.queryn{
+  margin: 15px 10px;
+  height: 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.searcht{
+  margin-left: 4%;
+  color: #555;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 0.7%;
+}
+.information{
+  display: flex;
+}
+.nickname{
+  display: flex;
+  width: 20%;
+  height: 30px;
+}
+.nickname1{
+  display: flex;
+  width: 35%;
+  height: 30px;
+}
+.nickname2{
+  display: flex;
+  width: 50%;
+  height: 30px;
+}
+.address{
+  width:100px;
+  text-align: right;
+}
+.consignee{
+  width:150px;
+  text-align: left;
+}
+.consignees{
+  width: 320px;
+  text-align: left;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.anniu{
+  display: flex;
+  margin-right: 10%;
+}
+.resetsList{
+  background: linear-gradient(90deg, #425FCA 0%, #6484DD 100%);
+  border-radius: 4px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  height: 40px;
+  margin: auto 8%;
+  color: #fff;
+}
+.resets{
+  color: #6484DD;
+  height: 40px;
+  /* margin: auto 8%; */
+}
+/* 列表头 */
+.list{
+  height: 6.5%;
+  background-color: #F6F7FC;
+  display: flex;
+  padding: 0 20px;
+  color: #999;
+  margin: 0 10px;
+  border: 1px solid #AEB4DB;
+  width: 96.2%;
+}
+.imagt{
+  width: 19%;
+  text-align: center;
+  margin: auto 0;
+}
+.namesb{
+  width: 16%;
+  text-align: center;
+  margin: auto 0;
+}
+.timeu{
+  width: 16%;
+  text-align: center;
+  margin: auto 0;
+}
+.pricef{
+  width: 16%;
+  text-align: center;
+  margin: auto 0;
+}
+.introductionc{
+  width: 16%;
+  line-height: 25px !important;
+  text-align: center;
+  margin: auto 0;
+}
+.categorysrv{
+  width: 15%;
+  text-align: center !important;
+  margin: auto 0;
+}
+
+/* 列表内容 */
+.contents{
+  background-color: #fff;
+  margin: 0 10px;
+  color: #333;
+  width: 98.7%;
+}s
+.content-a{
+  display: flex;
+  padding: 0 20px;
+  color: #666;
+  height: 113px;
+  border-bottom: 1px solid #EAEEF7;
+}
+.imagt img{
+  width: 75px;
+  height: 75px;
+}
+
+
+
+
+
+
+
+
+
+

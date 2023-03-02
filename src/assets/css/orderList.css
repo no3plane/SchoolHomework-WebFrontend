@@ -1,0 +1,162 @@
+.container{
+  height: 100%;
+  background-color: #eaeef7;
+}
+/* 商品发布 */
+.system{
+  display: flex;
+  color: #474d76;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.el-icon-minus{
+  color: #474d76;
+  margin-top: 0.2%;
+}
+.el-icon-arrow-right{
+  color: #474d76;
+  margin-top: 0.2%;
+}
+/* 查询部分 */
+.querys{
+  margin: 15px 10px;
+  height: 10%;
+  background-color: #fff;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999;
+}
+.searchs{
+  display: flex;
+  margin: 1.5% 3%;
+  padding-top: 24px;
+}
+.dateTimes{
+  display: flex;
+  margin-right: 15px;
+}
+.frames{
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+
+.resets{
+  color: #6484DD;
+}
+.categorys{
+  display: flex;
+  margin: auto 5%;
+  color: #999;
+}
+.category-sl{
+  margin-top: 10px;
+  margin-left: 10%;
+}
+.choices{
+  width: 40%;
+}
+.shelf{
+  width: 25%;
+  display: flex;
+  margin: auto 0;
+}
+.onekey{
+  margin-right: 10%;
+}
+/* 列表头 */
+.lists{
+  height: 6.5%;
+  background-color: #F6F7FC;
+  display: flex;
+  padding: 0 20px;
+  color: #999;
+  margin: 0 10px;
+  border: 1px solid #AEB4DB;
+  width: 96.2%;
+}
+.selects{
+  width:6%;
+  text-align: center;
+  margin: auto 0;
+}
+
+.imags{
+  width:15%;
+  text-align: center;
+  margin: auto 0;
+}
+.namesl{
+  width: 15%;
+  text-align: center;
+  margin: auto 0;
+}
+.times{
+  width: 15%;
+  text-align: center;
+  margin: auto 0;
+}
+.prices{
+  width: 12%;
+  text-align: center;
+  margin: auto 0;
+}
+.introductions{
+  width: 12%;
+  line-height: 25px !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-align: center;
+  margin: auto 0;
+}
+.categorysl{
+  width: 10%;
+  text-align: center;
+  margin: auto 0;
+}
+.operations{
+  width: 15%;
+  text-align: center;
+  margin: auto 0;
+
+}
+/* 列表内容 */
+.contentsl{
+  background-color: #fff;
+  margin: 0 10px;
+  color: #333;
+  width: 98.7%;
+}
+.content-as{
+  display: flex;
+  padding: 0 20px;
+  color: #666;
+  height: 113px;
+  border-bottom: 1px solid #EAEEF7;
+}
+
+.modifys{
+  display: flex;
+  color: #425FCA;
+}
+.modify-sl{
+  margin-right: 30px !important;
+  margin-left: 28%;
+  cursor:pointer;
+}
+.lines{
+  margin-right: 30px;
+}
+.shelfs{
+  cursor:pointer;
+  color: #425FCA;
+}
+
+
+
+
+
+
+
