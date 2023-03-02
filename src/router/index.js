@@ -1,55 +1,64 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import store from '../store'
+import { createRouter, createWebHistory } from "vue-router";
 //import Login from '../components/Login.vue'
 const Login = () =>
-  import( /* webpackChunkName: "login_home_welecome-" */ '../components/Login.vue')
+  import(
+    /* webpackChunkName: "login_home_welecome-" */ "../components/Login.vue"
+  );
 const Home = () =>
-  import( /* webpackChunkName: "login_home_welecome-" */ '../components/Home.vue')
+  import(
+    /* webpackChunkName: "login_home_welecome-" */ "../components/Home.vue"
+  );
 const shopRelease = () =>
-  import( /* webpackChunkName: "login_home_welecome-" */ '../components/shopRelease.vue')
+  import(
+    /* webpackChunkName: "login_home_welecome-" */ "../components/shopRelease.vue"
+  );
 const Shop = () =>
-  import( /* webpackChunkName: "login_home_welecome-" */ '../components/Shop.vue')
+  import(
+    /* webpackChunkName: "login_home_welecome-" */ "../components/Shop.vue"
+  );
 
+const routes = [
+  {
+    path: "/",
+    redirect: "/login",
+  },
+  {
+    path: "/login",
+    component: Login,
+  },
+  //首頁
+  {
+    path: "/home",
+    component: Home,
+    redirect: "shopRelease",
+    children: [
+      {
+        path: "/shopRelease",
+        component: shopRelease,
+      },
+    ],
+  },
+  //商品
+  {
+    path: "/home",
+    component: Home,
+    redirect: "Shop",
+    children: [
+      {
+        path: "/Shop",
+        component: Shop,
+      },
+    ],
+  },
+];
 
+const router = createRouter({
+  mode: "history",
+  history: createWebHistory(),
+  // base: process.env.BASE_URL,
+  routes,
+});
 
-Vue.use(VueRouter)
-Vue.use(store)
-
-const routes = [{
-  path: "/",
-  redirect: "/login"
-},
-{
-  path: "/login",
-  component: Login,
-},
-//首頁
-{
-  path: "/home",
-  component: Home,
-  redirect: "shopRelease",
-  children: [{
-    path: "/shopRelease",
-    component: shopRelease
-  }]
-},
-//商品
-{
-  path: "/home",
-  component: Home,
-  redirect: "Shop",
-  children: [{
-    path: "/Shop",
-    component: Shop
-  }]
-}
-]
-const router = new VueRouter({
-  mode: 'hash',
-  base: process.env.BASE_URL,
-  routes
-})
 //全局路由导航守卫
 /* router.beforeEach((to, from, next) => {
   if (to.path == '/comlogin') {
@@ -78,4 +87,4 @@ const router = new VueRouter({
   }
 
 }) */
-export default router
+export default router;
